@@ -6,7 +6,7 @@ export const TaskWrapper = styled.div`
   display: flex;
   line-height: 50px;
   margin-left: 50%;
-  margin-top: 30%;
+  margin-top: 450px;
   transform: translateX(-50%) translateY(-50%);
   justify-content: space-between;
 
@@ -59,6 +59,12 @@ export const TaskWrapper = styled.div`
 
   .learning {
     background-color: #a3d09b;
+    input {
+      width: 150px;
+      height: 30px;
+      display: block;
+      margin: 30px 20px;
+    }
 
     &::before {
       content: "Learning";
@@ -73,6 +79,13 @@ export const TaskWrapper = styled.div`
 
   .complete {
     background-color: #e2e2e2;
+
+    input {
+      width: 150px;
+      height: 30px;
+      display: block;
+      margin: 30px 20px;
+    }
 
     &::before {
       content: "Complete";
