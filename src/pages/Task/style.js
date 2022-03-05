@@ -24,6 +24,7 @@ export const TaskWrapper = styled.div`
       background-color: #f5e0e1;
       display: block;
       margin-top: -50px;
+      margin-bottom: 30px;
       height: 30px;
       line-height: 30px;
       text-align: center;
@@ -34,6 +35,7 @@ export const TaskWrapper = styled.div`
       height: 30px;
       display: block;
       margin-left: 20px;
+      margin-bottom: 30px;
     }
 
     .blank {
@@ -59,11 +61,33 @@ export const TaskWrapper = styled.div`
 
   .learning {
     background-color: #a3d09b;
-    input {
+    .input {
       width: 150px;
       height: 30px;
-      display: block;
       margin: 30px 20px;
+      border: 1px solid;
+      text-align: center;
+      line-height: 30px;
+      background-color: #fff;
+      position: relative;
+
+      .delete {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #f173ac;
+        line-height: 16px;
+        color: #fff;
+        left: 140px;
+        top: -10px;
+        position: absolute;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #d93a49;
+        }
+      }
     }
 
     &::before {
@@ -80,13 +104,29 @@ export const TaskWrapper = styled.div`
   .complete {
     background-color: #e2e2e2;
 
-    input {
+    .input {
       width: 150px;
       height: 30px;
-      display: block;
       margin: 30px 20px;
+      border: 1px solid;
+      text-align: center;
+      line-height: 30px;
+      background-color: #fff;
     }
-
+    .delete {
+      width: 18px;
+      height: 18px;
+      display: block;
+      border-radius: 50%;
+      background-color: #f173ac;
+      line-height: 16px;
+      color: #fff;
+      margin-left: 140px;
+      margin-top: -10px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
     &::before {
       content: "Complete";
       background-color: #e2e2e2;
