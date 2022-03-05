@@ -7,8 +7,8 @@ export const LoginWrapper = styled.div`
   text-align: center;
   line-height: 50px;
   margin-left: 50%;
-  margin-top: 50vh;
-  transform: translateX(-50%);
+  margin-top: 50%;
+  transform: translateX(-50%) translateY(-50%);
   cursor: pointer;
 
   &:hover {
