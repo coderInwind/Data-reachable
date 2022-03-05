@@ -1,11 +1,13 @@
 import React, { memo } from "react";
-import Login from "./pages/Login";
+
+import RouterRender from "./router";
+import { BrowserRouter } from "react-router-dom";
 
 const App = memo(() => {
   return (
-    <div>
-      <Login />
-    </div>
+    <BrowserRouter>
+      <RouterRender />
+    </BrowserRouter>
   );
 });
 

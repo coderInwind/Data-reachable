@@ -1,8 +1,16 @@
 import React, { memo } from "react";
 import { LoginWrapper } from "./style";
 
+import { useNavigate } from "react-router-dom";
+
 const Login = memo(() => {
-  return <LoginWrapper>Login</LoginWrapper>;
+  const navigate = useNavigate();
+
+  const loginIn = () => {
+    navigate("/task");
+  };
+
+  return <LoginWrapper onClick={loginIn}>Start App</LoginWrapper>;
 });
 
 export default Login;
