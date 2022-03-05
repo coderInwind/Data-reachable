@@ -45,6 +45,7 @@ const Task = memo(() => {
     createElement();
     //给增加的input增加监听事件
     const currentInput = studyRef.current.childNodes[listIndex];
+
     if (listIndex < 0) {
       setlistIndex(0);
     }
@@ -60,6 +61,7 @@ const Task = memo(() => {
     //move监听函数
     const moveFn = (e) => {
       //设置拖动时的位置(还要减去margin的偏移量)
+      currentInput.style.zIndex = 10;
       currentInput.style.left = e.clientX - 20 - diffX + "px";
       currentInput.style.top = e.clientY - diffY + "px";
       mouseX = e.clientX;
@@ -171,6 +173,7 @@ const Task = memo(() => {
         //moving
         studyRef.current.childNodes[0].addEventListener("mousemove", (e) => {
           const currentInput = studyRef.current.childNodes[0];
+          currentInput.style.zIndex = 10;
           //设置拖动时的位置(还要减去margin的偏移量)
           currentInput.style.left = e.clientX - 20 - diffX + "px";
           currentInput.style.top = e.clientY - diffY + "px";

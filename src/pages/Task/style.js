@@ -47,6 +47,7 @@ export const TaskWrapper = styled.div`
       width: 40px;
       height: 40px;
       margin: 30px auto;
+      color: #b68989;
       text-align: center;
       line-height: 35px;
       font-size: 40px;
