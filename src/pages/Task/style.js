@@ -71,10 +71,16 @@ export const TaskWrapper = styled.div`
       background-color: #fff;
       position: relative;
 
+      &:hover {
+        .delete {
+          display: block;
+        }
+      }
+
       .delete {
+        display: none;
         width: 18px;
         height: 18px;
-        display: inline-block;
         border-radius: 50%;
         background-color: #f173ac;
         line-height: 16px;
@@ -112,23 +118,35 @@ export const TaskWrapper = styled.div`
       text-align: center;
       line-height: 30px;
       background-color: #fff;
-    }
-    .delete {
-      width: 18px;
-      height: 18px;
-      display: block;
-      border-radius: 50%;
-      background-color: #f173ac;
-      line-height: 16px;
-      color: #fff;
-      margin-left: 140px;
-      margin-top: -10px;
+      position: relative;
+
       &:hover {
-        cursor: pointer;
+        .delete {
+          display: block;
+        }
+      }
+
+      .delete {
+        display: none;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #f173ac;
+        line-height: 16px;
+        color: #fff;
+        left: 140px;
+        top: -10px;
+        position: absolute;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #d93a49;
+        }
       }
     }
+
     &::before {
-      content: "Complete";
+      content: "Learning";
       background-color: #e2e2e2;
       display: block;
       margin-top: -50px;
